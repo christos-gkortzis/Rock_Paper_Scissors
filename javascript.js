@@ -72,4 +72,21 @@ function game(){
         return " It's a tie, try again to win!"
     }
 }
-console.log(game());
+computerSelection = getComputerChoice();
+//console.log(game());
+const btn1 = document.querySelector('#bt1');
+btn1.addEventListener('click', () =>{ console.log(playRound('Rock', computerSelection ))
+
+}
+);
+
+
+const btn2 = document.querySelector('#bt2');
+btn2.addEventListener('click', () => { console.log(playRound('Paper', computerSelection ))
+    
+});
+
+const btn3 = document.querySelector('#bt3');
+btn3.addEventListener('click', () => { console.log(playRound('Scissors', computerSelection ))
+    
+});
